@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app1:
+    build: ./
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - 8011:80
